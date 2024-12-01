@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola Mundo</title>
+</head>
+<body>
+    <title>Hello from Flask</title>
+    {% if session["username"] %}
+    <h1>Hello {{ session["username"] }}!</h1>
+    {% else %}
+    <h1>Hola invitado!</h1>
+    {% endif %}
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+</body>
+</html>
